@@ -21,9 +21,9 @@ repositories {
 
 dependencies {
   // mandatory dependencies for using Spock
-  implementation platform('org.apache.groovy:groovy-bom:4.0.16')
-  implementation 'org.apache.groovy:groovy'
-  testImplementation platform("org.spockframework:spock-bom:2.3-groovy-4.0")
+  implementation platform('org.codehaus.groovy:groovy-bom:3.0.20')
+  implementation 'org.codehaus.groovy:groovy'
+  testImplementation platform("org.spockframework:spock-bom:2.3-groovy-3.0")
   testImplementation "org.spockframework:spock-core"
   testImplementation "org.spockframework:spock-junit4"  // you can remove this if your code does not rely on old JUnit 4 rules
 
@@ -34,7 +34,7 @@ dependencies {
 
   // dependencies used by examples in this project
   testRuntimeOnly "com.h2database:h2:2.2.224"
-  implementation "org.apache.groovy:groovy-sql"
+  implementation "org.codehaus.groovy:groovy-sql"
 }
 
 test {
